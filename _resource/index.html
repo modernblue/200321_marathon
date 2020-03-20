@@ -11,11 +11,11 @@ gtag('config', 'UA-64717431-4');
 </script>
 <script>
 var obj = {
-	startday: new Date('2020/03/04 20:00:00'),
-	endday: new Date('2020/03/15 23:59:59'),
+	startday: new Date('2020/03/21 20:00:00'),
+	endday: new Date('2020/03/31 23:59:59'),
 	today: new Date(),
 	//elm_head: $('body > .header'),
-	url: 'https://www.rakuten.ne.jp/gold/mb/page/200304_supersale/'
+	url: 'https://www.rakuten.ne.jp/gold/mb/page/200321_marathon/'
 };
 if (obj.startday < obj.today && obj.today < obj.endday) {
 	location.href = obj.url;
@@ -23,8 +23,8 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 </script>
 
 <meta charset="utf-8">
-<title>楽天スーパーSALE モダンブルー 楽天店</title>
-<meta name="description" content="特別限定価格とポイントアップの2大企画！「楽天スーパーSALE 告知」">
+<title>楽天お買い物マラソン モダンブルー 楽天店</title>
+<meta name="description" content="特別限定価格とポイントアップの2大企画！「楽天お買い物マラソン 告知」">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="assets/lib/slick/slick.css"  rel="stylesheet">
@@ -33,7 +33,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 
 </head>
 <body>
-<div id="wrap">
+<div id="app" class="wrap" v-cloak>
 	<header class="header">
 		<div class="header__cont cf">
 			<div class="header__left">
@@ -101,20 +101,20 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<div class="headline__mv">
 				<p class="headline__bg"><img src="assets/image/mv.jpg" alt=""></p>
 			</div>
-			<h1 class="headline__ttl">楽天スーパーSALE モダンブルー特別企画</h1>
-			<p class="headline__date"><span>【告知】3.4<span class="font--small">(水)</span> 20:00 スタート</span></p>
-			<p class="headline__txt">楽天市場のスペシャルイベント「スーパーSALE」の開催が決定！<br>モダンブルーでは、スタートから利用できる1,000円OFFのスペシャルクーポンを配布します。<br>春に向けて揃えておきたいウェアやラグジュアリーブランドの新作バッグ、話題のミニウォレットなど、欲しかったアイテムを購入するなら、この期間中がオススメ。<br>お気に入り登録とクーポン取得は今すぐにしていただけますので、こちらもお忘れなく！</p>
+			<h1 class="headline__ttl">楽天お買い物マラソン モダンブルー特別企画</h1>
+			<p class="headline__date"><span>【告知】3.21<span class="font--small">(土)</span> 20:00 スタート</span></p>
+			<p class="headline__txt">前回も大好評だった「お買い物マラソン」の3月開催が決定しました！<br>モダンブルーでは、スタートから利用できる1,000円OFFのスペシャルクーポンを配布します。<br>ワードローブにプラスしたい春夏新作ウェアやラグジュアリーブランドのバッグ、パステルカラーのウォレットなど、欲しかったアイテムを購入するなら、この期間中がオススメ。<br>お気に入り登録とクーポン取得は今すぐにしていただけますので、こちらもお忘れなく！</p>
 
 			<div class="headline__entry entry">
-				<p class="entry__ttl">【楽天スーパーSALE 各ショップ対象】</p>
-				<p class="entry__txt">ショップ買い回りでポイント最大<span>10</span>倍</p>
-				<p class="entry__btn"><a href="https://event.rakuten.co.jp/campaign/supersale/" target="_blank">エントリーはこちら&nbsp;&gt;</a></p>
+				<p class="entry__ttl">【楽天お買い物マラソン 各ショップ対象】</p>
+				<p class="entry__txt">ショップ買い回りでポイント最大<span>44</span>倍</p>
+				<p class="entry__btn"><a href="https://event.rakuten.co.jp/campaign/point-up/marathon/" target="_blank">エントリーはこちら&nbsp;&gt;</a></p>
 
 			</div>
 
 			<div class="headline__cpn cpn">
-				<!-- <p class="cpn__ttl">楽天スーパーSALE1時間限定クーポン</p> -->
-				<p class="cpn__bnr cpn__limit"><a href="https://coupon.rakuten.co.jp/getCoupon?getkey=UkZaRi1FSDdILVA5SkQtWVBXTQ--&rt=" target="_blank"><img src="assets/image/bnr_01.jpg" alt=""></a></p>
+				<!-- <p class="cpn__ttl">楽天お買い物マラソン1時間限定クーポン</p> -->
+				<p class="cpn__bnr cpn__limit"><a href="https://coupon.rakuten.co.jp/getCoupon?getkey=V1hWQS1LTllQLVFTSlUtWldORg--&rt=" target="_blank"><img src="assets/image/bnr_01.jpg" alt=""></a></p>
 
 			</div>
 
@@ -146,12 +146,12 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 
 				<div class="headline__btn btn">
 					<p class="btn__coution"><span>まだまだあります！</span></p>
-					<p class="btn__cmn"><a href="https://search.rakuten.co.jp/search/mall/BBGG/?sid=195888&v=3" target="_blank">楽天スーパーSALEだけの特別商品をすべて見る ＞</a></p>
+					<p class="btn__cmn"><a href="https://search.rakuten.co.jp/search/mall/BBGG/?sid=195888&v=3" target="_blank">楽天お買い物マラソンだけの特別商品をすべて見る ＞</a></p>
 				</div>
 			</div> -->
 
 			<div class="headline__nav nav isMen">
-				<p class="nav__ttl">楽天スーパーSALE メンズ注目カテゴリ</p>
+				<p class="nav__ttl">楽天お買い物マラソン メンズ注目カテゴリ</p>
 				<ul class="nav__items cf">
 					<li class="item"><a href="#nav-men-01"><img src="assets/image/nav_men_01.jpg" alt=""><span class="fuwafuwa">メンズ<br>アウター</span></a></li>
 					<li class="item"><a href="#nav-men-02"><img src="assets/image/nav_men_02.jpg" alt=""><span>メンズ<br>トップス</span></a></li>
@@ -165,7 +165,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 				</div>
 			</div>
 			<div class="headline__nav nav isWomen">
-				<p class="nav__ttl">楽天スーパーSALE レディース注目カテゴリ</p>
+				<p class="nav__ttl">楽天お買い物マラソン レディース注目カテゴリ</p>
 				<ul class="nav__items cf">
 					<li class="item"><a href="#nav-women-01"><img src="assets/image/nav_women_01.jpg" alt=""><span>レディース<br>アウター</span></a></li>
 					<li class="item"><a href="#nav-women-02"><img src="assets/image/nav_women_02.jpg" alt=""><span>レディース<br>財布</span></a></li>
@@ -199,21 +199,8 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 
 
 </ul> -->
-				<ul class="remark__list cf">
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/i117-7954/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img127/i117-7954_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">ASPESI</p><p class="item__item">ナイロンジャケット</p><p class="item__price shipping__free">&yen;<span>39,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/alamo-2468/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img377/alamo-2468_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BOSS RED</p><p class="item__item">シングル</p><p class="item__price shipping__free">&yen;<span>34,001</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/sc-morandi-km1/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img383/sc-morandi-km1_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">MOORER</p><p class="item__item">その他</p><p class="item__price shipping__free">&yen;<span>94,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/s74am1027-s30342/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img380/s74am1027-s30342_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">DSQUARED2</p><p class="item__item">デニムジャケット</p><p class="item__price shipping__free">&yen;<span>78,001</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/484284-y5ya2/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img301/484284-y5ya2_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">SAINT LAURENT PARIS</p><p class="item__item">ライダースジャケット</p><p class="item__price shipping__free">&yen;<span>478,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/608796-tyd36/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img381/608796-tyd36_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BALENCIAGA</p><p class="item__item">ナイロンジャケット</p><p class="item__price shipping__free">&yen;<span>158,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-
-
-
-
-
-
-
-
+				<ul class="remark__list cf men01">
+					<!-- Data are displayed here. -->
 				</ul>
 
 				<!-- <ul class="cat__list cat cf">
@@ -234,21 +221,8 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<section class="cont__remark remark" id="nav-men-02">
 				<h2>メンズ トップス</h2>
 
-				<ul class="remark__list cf">
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/guildo-r-a/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img267/guildo-r-a_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">SAINT JAMES</p><p class="item__item">長袖クルーネック</p><p class="item__price shipping__free">&yen;<span>7,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/belden/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img334/belden_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">JOHN SMEDLEY</p><p class="item__item">半袖クルーネック</p><p class="item__price shipping__free">&yen;<span>9,801</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/brand-shirt/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img338/brand-shirt_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BALR</p><p class="item__item">半袖クルーネック</p><p class="item__price shipping__free">&yen;<span>9,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/8nztpa-zjh4z/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img383/8nztpa-zjh4z_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">ARMANI EXCHANGE</p><p class="item__item">半袖クルーネック</p><p class="item__price shipping__free">&yen;<span>5,500</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/kason-0651/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img320/kason-0651_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BOSS RED</p><p class="item__item">長袖ワイドカラー</p><p class="item__price shipping__free">&yen;<span>9,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/583117-t1439/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img346/583117-t1439_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BALENCIAGA</p><p class="item__item">長袖クルーネック</p><p class="item__price shipping__free">&yen;<span>68,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-
-
-
-
-
-
-
-
+				<ul class="remark__list cf men02">
+					<!-- Data are displayed here. -->
 				</ul>
 
 
@@ -264,19 +238,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<section class="cont__remark remark" id="nav-men-03">
 				<h2>メンズ 財布</h2>
 
-				<ul class="remark__list cf">
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/2mo738-053-f0002/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img230/2mo738-053-f0002_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">PRADA</p><p class="item__item">二つ折り財布</p><p class="item__price shipping__free">&yen;<span>36,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/35ui0437-2714-8013/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img361/35ui0437-2714-8013_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">MAISON MARGIELA</p><p class="item__item">二つ折り財布</p><p class="item__price shipping__free">&yen;<span>44,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/8016618-beige/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img357/8016618-beige_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BURBERRY</p><p class="item__item">二つ折り財布</p><p class="item__price shipping__free">&yen;<span>31,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/605722-vcpq4/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img374/605722-vcpq4_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BOTTEGA VENETA</p><p class="item__item">二つ折り財布</p><p class="item__price shipping__free">&yen;<span>53,200</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/s1112/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img226/s1112_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">WHITE HOUSE COX</p><p class="item__item">二つ折り財布</p><p class="item__price shipping__free">&yen;<span>41,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/408826-khn4n-1095/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img264/408826-khn4n-1095_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">GUCCI</p><p class="item__item">二つ折り財布</p><p class="item__price shipping__free">&yen;<span>48,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-
-
-
-
-
-
+				<ul class="remark__list cf men03">
 				</ul>
 
 
@@ -292,18 +254,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<section class="cont__remark remark" id="nav-men-04">
 				<h2>メンズ バッグ</h2>
 
-				<ul class="remark__list cf">
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/aer11002-black/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img367/aer11002-black_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">AER</p><p class="item__item">リュック・バックパック</p><p class="item__price shipping__free">&yen;<span>21,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/8014420-beige/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img357/8014420-beige_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BURBERRY</p><p class="item__item">ボディバッグ</p><p class="item__price shipping__free">&yen;<span>44,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/55wb0014-253-8013/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img348/55wb0014-253-8013_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">MAISON MARGIELA</p><p class="item__item">ボディバッグ</p><p class="item__price shipping__free">&yen;<span>44,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/36067-25-nero/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img384/36067-25-nero_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">ZANELLATO</p><p class="item__item">ショルダーバッグ</p><p class="item__price shipping__free">&yen;<span>58,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/19097-2brj-38no/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img369/19097-2brj-38no_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">CELINE</p><p class="item__item">トートバッグ</p><p class="item__price shipping__free">&yen;<span>168,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/7n0102-o73/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img380/7n0102-o73_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">FENDI</p><p class="item__item">クラッチバッグ</p><p class="item__price shipping__free">&yen;<span>69,800</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-
-
-
-
-
+				<ul class="remark__list cf men04">
 				</ul>
 
 
@@ -319,22 +270,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<section class="cont__remark remark" id="nav-men-05">
 				<h2>メンズ シューズ</h2>
 
-				<ul class="remark__list cf">
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/david/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img283/david_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">SALVATORE FERRAGAMO</p><p class="item__item">ローファー</p><p class="item__price shipping__free">&yen;<span>53,700</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/800080-n0051-9099/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img384/800080-n0051-9099_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">STELLA MCCARTNEY</p><p class="item__item">スニーカー</p><p class="item__price shipping__free">&yen;<span>34,001</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/antares-ab-89c/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img189/antares-ab-89c_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">ATLANTIC STARS</p><p class="item__item">スニーカー</p><p class="item__price shipping__free">&yen;<span>24,445</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/xxm0gw05470re0u820/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img130/xxm0gw05470re0u820_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">TODS</p><p class="item__item">ドライビングシューズ</p><p class="item__price shipping__free">&yen;<span>44,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/553680-whgp5-1000/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img384/553680-whgp5-1000_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">ALEXANDER MCQUEEN</p><p class="item__item">スニーカー</p><p class="item__price shipping__free">&yen;<span>48,001</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/608751-vt031/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img380/608751-vt031_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BOTTEGA VENETA</p><p class="item__item">スリッポン</p><p class="item__price shipping__free">&yen;<span>77,500</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-
-
-
-
-
-
-
-
-
+				<ul class="remark__list cf men05">
 				</ul>
 
 
@@ -350,18 +286,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<section class="cont__remark remark" id="nav-men-06">
 				<h2>メンズ アクセサリ・小物</h2>
 
-				<ul class="remark__list cf">
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/gt29-black/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img130/gt29-black_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">FOX UMBRELLAS</p><p class="item__item">長傘</p><p class="item__price shipping__free">&yen;<span>18,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/tyke-lt-010/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img239/tyke-lt-010_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BALLY</p><p class="item__item">カードケース</p><p class="item__price shipping__free">&yen;<span>14,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/66a062/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img283/66a062_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">SALVATORE FERRAGAMO</p><p class="item__item">カードケース</p><p class="item__price shipping__free">&yen;<span>28,700</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/otrips-2814/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img379/otrips-2814_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BOSS BLACK</p><p class="item__item">ベルト</p><p class="item__price shipping__free">&yen;<span>14,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/ft0237-f-01b/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img386/ft0237-f-01b_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">TOM FORD</p><p class="item__item">サングラス</p><p class="item__price shipping__free">&yen;<span>28,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/bcm0265-05c00001/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img386/bcm0265-05c00001_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">DSQUARED2</p><p class="item__item">ベースボールキャップ</p><p class="item__price shipping__free">&yen;<span>16,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-
-
-
-
-
+				<ul class="remark__list cf men06">
 				</ul>
 
 
@@ -754,20 +679,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<section class="cont__remark remark" id="nav-women-01">
 				<h2>レディース アウター</h2>
 
-				<ul class="remark__list cf">
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/liane-53048/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img162/liane-53048_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">MONCLER</p><p class="item__item">ダウンベスト</p><p class="item__price shipping__free">&yen;<span>61,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/sarin-12400/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img383/sarin-12400_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">DUVETICA</p><p class="item__item">ブルゾン</p><p class="item__price shipping__free">&yen;<span>31,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/8g70300-v8101/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img385/8g70300-v8101_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">MONCLER</p><p class="item__item">パーカ</p><p class="item__price shipping__free">&yen;<span>68,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/8c71510-v8094/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img385/8c71510-v8094_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">MONCLER</p><p class="item__item">半袖クルーネック</p><p class="item__price shipping__free">&yen;<span>21,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/53210107/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img381/53210107_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">WEEKEND MAX MARA</p><p class="item__item">ワンピース</p><p class="item__price shipping__free">&yen;<span>28,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/4073370-honey/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img325/4073370-honey_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BURBERRY</p><p class="item__item">トレンチコート</p><p class="item__price shipping__free">&yen;<span>198,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-
-
-
-
-
-
-
+				<ul class="remark__list cf women01">
 				</ul>
 
 
@@ -783,21 +695,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<section class="cont__remark remark" id="nav-women-02">
 				<h2>レディース 財布</h2>
 
-				<ul class="remark__list cf">
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/filipa-cst-black/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img368/filipa-cst-black_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">JIMMY CHOO</p><p class="item__item">長財布ラウンド</p><p class="item__price shipping__free">&yen;<span>58,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/431000-w9132-4061/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img178/431000-w9132-4061_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">STELLA MCCARTNEY</p><p class="item__item">三つ折り財布</p><p class="item__price shipping__free">&yen;<span>26,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/56ui0150-0399-8013/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img380/56ui0150-0399-8013_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">MAISON MARGIELA</p><p class="item__item">三つ折り財布</p><p class="item__price shipping__free">&yen;<span>44,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/p312b71/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img368/p312b71_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">CHLOE</p><p class="item__item">三つ折り財布</p><p class="item__price shipping__free">&yen;<span>41,500</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/8m0406-a18b/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img346/8m0406-a18b_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">FENDI</p><p class="item__item">長財布ラウンド</p><p class="item__price shipping__free">&yen;<span>54,700</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/593813-1izf3-9066/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img386/593813-1izf3-9066_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BALENCIAGA</p><p class="item__item">三つ折り財布</p><p class="item__price shipping__free">&yen;<span>44,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-
-
-
-
-
-
-
-
+				<ul class="remark__list cf women02">
 				</ul>
 
 
@@ -813,22 +711,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<section class="cont__remark remark" id="nav-women-03">
 				<h2>レディース バッグ</h2>
 
-				<ul class="remark__list cf">
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/54wd0039-992-8013/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img320/54wd0039-992-8013_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">MM6 MAISON MARGIELA</p><p class="item__item">トートバッグ</p><p class="item__price shipping__free">&yen;<span>19,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/s964390/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img318/s964390_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">SEE BY CHLOE</p><p class="item__item">ショルダーバッグ</p><p class="item__price shipping__free">&yen;<span>22,400</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/sofia-s-ltr-black/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img349/sofia-s-ltr-black_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">JIMMY CHOO</p><p class="item__item">トートバッグ</p><p class="item__price shipping__free">&yen;<span>98,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/s192a37/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img328/s192a37_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">CHLOE</p><p class="item__item">ショルダーバッグ</p><p class="item__price shipping__free">&yen;<span>99,800</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/8bs032-a18b/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img362/8bs032-a18b_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">FENDI</p><p class="item__item">ショルダーバッグ</p><p class="item__price shipping__free">&yen;<span>88,700</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/572411-0ai2n-5840/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img347/572411-0ai2n-5840_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BALENCIAGA</p><p class="item__item">トートバッグ</p><p class="item__price shipping__free">&yen;<span>119,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-
-
-
-
-
-
-
-
-
+				<ul class="remark__list cf women03">
 				</ul>
 
 
@@ -844,21 +727,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<section class="cont__remark remark" id="nav-women-04">
 				<h2>レディース シューズ</h2>
 
-				<ul class="remark__list cf">
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/myjoy2/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img325/myjoy2_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">SALVATORE FERRAGAMO</p><p class="item__item">パンプス</p><p class="item__price shipping__free">&yen;<span>35,400</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/524039-w09oh-6470/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img338/524039-w09oh-6470_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BALENCIAGA</p><p class="item__item">スニーカー</p><p class="item__price shipping__free">&yen;<span>88,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/610648-gup10-9113/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img385/610648-gup10-9113_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">SAINT LAURENT PARIS</p><p class="item__item">スニーカー</p><p class="item__price shipping__free">&yen;<span>54,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/51148678-654/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img321/51148678-654_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">TORY BURCH</p><p class="item__item">サンダル</p><p class="item__price shipping__free">&yen;<span>11,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/byld-kv01/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img382/byld-kv01_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">PHILIPPE MODEL PARIS</p><p class="item__item">スニーカー</p><p class="item__price shipping__free">&yen;<span>36,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/58wz0042-516-9004/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img382/58wz0042-516-9004_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">MAISON MARGIELA</p><p class="item__item">パンプス</p><p class="item__price shipping__free">&yen;<span>68,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-
-
-
-
-
-
-
-
+				<ul class="remark__list cf women04">
 				</ul>
 
 
@@ -874,21 +743,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<section class="cont__remark remark" id="nav-women-05">
 				<h2>レディース アクセサリ・小物</h2>
 
-				<ul class="remark__list cf">
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/c0638-p/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img242/c0638-p_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">IL BISONTE</p><p class="item__item">キーリング</p><p class="item__price">&yen;<span>2,200</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/c0847-p/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img281/c0847-p_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">IL BISONTE</p><p class="item__item">キーケース</p><p class="item__price">&yen;<span>3,700</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/27003/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img1004/27003_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">MARIMEKKO</p><p class="item__item">ポーチ</p><p class="item__price">&yen;<span>2,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/608783-vo0bg/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img373/608783-vo0bg_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">BOTTEGA VENETA</p><p class="item__item">キーリング</p><p class="item__price shipping__free">&yen;<span>24,700</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/p087a37/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img346/p087a37_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">CHLOE</p><p class="item__item">カードケース</p><p class="item__price shipping__free">&yen;<span>27,700</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-<li class="item"><a href="https://item.rakuten.co.jp/mb/em32-b30-o60/?utm_source=lp&utm_campaign=200304_supersale_pre" target="_brank"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/mb/cabinet/img163/em32-b30-o60_l.jpg?_ex=320x320&s=2&r=1"><span class="note">2020春夏</span></a><p class="item__term">販売期間前</p><p class="item__brand">FURLA</p><p class="item__item">ポーチ</p><p class="item__price shipping__free">&yen;<span>7,000</span>税込</p><p>&nbsp;</p><p class="btn__fav"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=" target="_blank">☆ お気に入りに追加</a></p></li>
-
-
-
-
-
-
-
-
+				<ul class="remark__list cf women05">
 				</ul>
 
 
@@ -1185,14 +1040,16 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 			<div class="rcmd__cont">
 				<h2 class="ttl">開催中のおすすめ企画</h2>
 				<ul class="rcmd__items cf">
-					<li class="item"><a href="https://www.rakuten.ne.jp/gold/mb/page/18_rkDeal/rk.html" target="_blank"><img src="assets/image/rcmd_01.jpg" alt=""></a><span>ポイントバック15%<br>楽天スーパーDEAL開催中</span></li>
-					<li class="item"><a href="https://www.rakuten.ne.jp/gold/mb/mb/article/97/rk.html" target="_blank"><img src="assets/image/rcmd_02.jpg" alt=""></a><span>モダンブルーがおすすめする<br>春スタイルの最新ルック</span></li>
-					<li class="item"><a href="https://www.rakuten.ne.jp/gold/mb/mb/article/96/rk.html" target="_blank"><img src="assets/image/rcmd_03.jpg" alt=""></a><span>春に向けてバッグも新調！<br>ミニor大きめ あなたはどっち？</span></li>
-					<li class="item"><a href="https://www.rakuten.ne.jp/gold/mb/mb/article/91/rk.html" target="_blank"><img src="assets/image/rcmd_04.jpg" alt=""></a><span>ルックスがいいビジネスバッグの選び方</span></li>
-					<li class="item"><a href="https://www.rakuten.ne.jp/gold/mb/page/gift/rk.html" target="_blank"><img src="assets/image/rcmd_05.jpg" alt=""></a><span>ギフト ～ Gift<br>大切な人に贈るギフト特集</span></li>
-					<li class="item"><a href="https://www.rakuten.ne.jp/gold/mb/page/brand_new/ss/rk.html" target="_blank"><img src="assets/image/rcmd_06.jpg?200109" alt=""></a><span>2020年春夏新作<br>入荷ブランド一覧</span></li>
-					<li class="item"><a href="https://www.rakuten.ne.jp/gold/mb/page/review_coupon/rk.html" target="_blank"><img src="assets/image/rcmd_07.jpg" alt=""></a><span>レビューを書いて<br>500円OFFクーポン</span></li>
-					<li class="item"><a href="https://item.rakuten.co.jp/mb/c/0000002899/" target="_blank"><img src="assets/image/rcmd_08.jpg" alt=""></a><span>お買い得価格目白押し！<br>アウトレット</span></li>
+					<!-- <li class="item"><a href="https://www.rakuten.ne.jp/gold/mb/page/18_rkDeal/rk.html" target="_blank"><img src="assets/image/rcmd_01.jpg" alt=""></a><span>ポイントバック15%<br>楽天スーパーDEAL開催中</span></li> -->
+
+					<li class="item" v-for="recommend in recommendList" v-bind:key="recommend.id">
+						<template v-if="recommend.target == true">
+							<a v-bind:href="recommend.url" target="_blank"><img v-bind:src="recommend.image" alt=""></a><span v-html="recommend.text"></span>
+						</template>
+						<template v-else>
+							<a v-bind:href="recommend.url"><img v-bind:src="recommend.image" alt=""></a><span v-html="recommend.text"></span>
+						</template>
+					</li>
 
 				</ul>
 			</div>
@@ -1238,6 +1095,7 @@ if (obj.startday < obj.today && obj.today < obj.endday) {
 </div><!-- /#wrap -->
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://jp.vuejs.org/js/vue.min.js"></script>
 <script type="text/javascript" src="assets/lib/slick/slick.min.js"></script>
 <script src="assets/lib/lazyload/jquery.lazyload.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="assets/js/base.min.js" charset="utf-8"></script>

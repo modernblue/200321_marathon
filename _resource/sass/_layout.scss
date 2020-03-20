@@ -6,6 +6,10 @@ layout style
 
 ************************************** */
 
+[v-cloak] {
+	display: none !important;
+}
+
 .isMen, .isWomen {
 	display: none;
 }
@@ -13,7 +17,7 @@ layout style
 	display: none !important;
 }
 
-#wrap {
+.wrap {
 	position: relative;
 }
 
@@ -82,7 +86,7 @@ layout style
 					}
 				}
 				&::after {
-					content: '【告知】楽天スーパーSALE 3月4日(水)スタート！';
+					content: '【告知】楽天お買い物マラソン 3月21日(土)スタート！';
 					position: absolute;
 					display: block;
 					left: 0;
@@ -1097,7 +1101,7 @@ layout style
 					}
 				}
 				&::after {
-					content: '【告知】楽天スーパーSALE 3月4日(水)スタート！';
+					content: '【告知】楽天お買い物マラソン 3月21日(土)スタート！';
 					position: relative;
 					// display: block;
 					// left: 0;
