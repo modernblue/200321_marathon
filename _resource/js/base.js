@@ -1,3 +1,141 @@
+let txt = 'babel!';
+
+// 数値を価格に整えるフィルター(#,###)
+Vue.filter('num_format', function(val) {
+  return val.toLocaleString();
+});
+
+// 商品一覧コンポーネント
+var app = new Vue({
+  el: '#app',
+  data: {
+    url: './assets/data/itemData.js',
+    //「セール対象」のチェック状態（true：チェック有り、false：チェック無し）
+    //showSaleItem: false,
+    //「送料無料」のチェック状態（true：チェック有り、false：チェック無し）
+    //showDelvFree: false,
+    //「並び替え」の選択値（1：標準、2：価格が安い順）
+    //sortOrder: 1,
+    campaign: "200321_marathon_pre",
+    shippingFree: 3850,
+    items: [],
+    categoryList: [],
+    recommends: [
+      {id: 1, url: 'https://www.rakuten.ne.jp/gold/mb/page/18_rkDeal/rk.html', image: 'assets/image/rcmd_01.jpg', text: 'ポイントバック15%<br>楽天スーパーDEAL開催中', target: true},
+      {id: 2, url: 'https://www.rakuten.ne.jp/gold/mb/mb/article/97/rk.html', image: 'assets/image/rcmd_02.jpg', text: 'モダンブルーがおすすめする<br>春スタイルの最新ルック', target: true},
+      {id: 3, url: 'https://www.rakuten.ne.jp/gold/mb/mb/article/96/rk.html', image: 'assets/image/rcmd_03.jpg', text: '春に向けてバッグも新調！<br>ミニor大きめ あなたはどっち？', target: true},
+      {id: 4, url: 'https://www.rakuten.ne.jp/gold/mb/mb/article/91/rk.html', image: 'assets/image/rcmd_04.jpg', text: 'ルックスがいいビジネスバッグの選び方', target: true},
+      {id: 5, url: 'https://www.rakuten.ne.jp/gold/mb/page/gift/rk.html', image: 'assets/image/rcmd_05.jpg', text: 'ギフト ～ Gift<br>大切な人に贈るギフト特集', target: true},
+      {id: 6, url: 'https://www.rakuten.ne.jp/gold/mb/page/brand_new/ss/rk.html', image: 'assets/image/rcmd_06.jpg', text: '2020年春夏新作<br>入荷ブランド一覧', target: true},
+      {id: 7, url: 'https://www.rakuten.ne.jp/gold/mb/page/review_coupon/rk.html', image: 'assets/image/rcmd_07.jpg', text: 'レビューを書いて<br>500円OFFクーポン', target: true},
+      {id: 8, url: 'https://item.rakuten.co.jp/mb/c/0000002899/', image: 'assets/image/rcmd_08.jpg', text: 'お買い得価格目白押し！<br>アウトレット', target: true}
+    ],
+    isError: false,
+    errorMessage: ''
+  },
+  methods: {
+    arrangeToPrice: function (price) {
+      return price.toLocaleString();
+    },
+    createCategory: function (items) {
+      for (var i=0; i<items.length; i++) {
+        this.categoryList.push(items[i].category);
+      }
+
+      this.categoryList = this.categoryList.filter(function (x, i, self) {
+        return self.indexOf(x) === i;
+      });
+      // console.log("created category.");
+    },
+    updateList: function (items) {
+      for (var i=0; i<this.categoryList.length; i++) {
+        // console.log(this.categoryList[i]);
+        eval("var " + this.categoryList[i] + " = \"\";");
+        var html = "";
+
+        for (var k=0; k<items.length; k++) {
+          if (this.categoryList[i] === items[k].category) {
+            // console.log(this.categoryList[i] + "と一致");
+            $("." + this.categoryList[i]).append(this.createItemTag(items[k]));
+          }
+        }
+      }
+      // console.log("updated itemList.");
+    },
+    createItemTag: function (item) {
+      // return item.image + "しました";
+      var html = `<li class="item">
+                    <a href="https://item.rakuten.co.jp/mb/${item.no}/?utm_source=lp&utm_campaign=${this.campaign}" target="_brank"><img src="${item.image}">
+                    ${item.season !== "" ? '<span class="note">' + item.season + '</span>' : ''}
+                    </a>
+                    <p class="item__term">販売期間前</p>
+                    <p class="item__brand">${item.brand}</p><p class="item__item">${item.kind}</p>
+                    ${item.price > this.shippingFree ? '<p class="item__price shipping__free">' : '<p class="item__price">'}
+                    &yen;<span>${this.arrangeToPrice(item.price)}</span>税込</p><p>&nbsp;</p>
+                    <p class="btn__fav">
+                      <a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=120&itype=1&shop_bid=195888&iid=${item.item_id}" target="_blank">☆ お気に入りに追加</a>
+                    </p>
+                  </li>`;
+      return html;
+    }
+  },
+  created: function() { // ライフサイクルハック
+    $.ajax({
+      url : this.url,
+      type: 'GET',
+      dataType: 'jsonp', // レスポンスデータのタイプ
+      jsonp: 'callback', // クエリパラメータ名
+      jsonpCallback: 'items' // コールバック関数名
+    })
+    .done(function(data, textStatus, jqXHR) {
+      this.items = data;
+      this.createCategory(this.items);
+      this.updateList(this.items);
+      // console.log(this.categoryList);
+    }.bind(this))
+    .fail(function(jqXHR, textStatus, errorThrown) {
+      this.isError = true;
+      this.errorMessage = '商品データの読み込みに失敗しました';
+    }.bind(this));
+  },
+  computed: {
+    // 絞り込み後の商品リストを返す算出プロパティ
+    recommendList: function() {
+      // 絞り込み後の商品リストを格納する新しい配列
+      var newList = [];
+      for (var i=0; i<this.recommends.length; i++) {
+        // 表示対象かどうかを判定するフラグ
+        var isShow = true;
+        // i番目の商品が表示対象かどうかを判定する
+        if (this.showSaleItem && !this.recommends[i].isSale) {
+        //「セール対象」チェック有りで、セール対象商品ではない場合
+        isShow = false;  // この商品は表示しない
+        }
+        if (this.showDelvFree && this.recommends[i].delv > 0) {
+        //「送料無料」チェック有りで、送料有りの商品の場合
+        isShow = false;  // この商品は表示しない
+        }
+        // 表示対象の商品だけを新しい配列に追加する
+        if (isShow) {
+        newList.push(this.recommends[i]);
+        }
+      }
+      // 新しい配列を並び替える
+      if (this.sortOrder == 1) {
+        // 元の順番にpushしているので並び替え済み
+      }
+      else if (this.sortOrder == 2) {
+        // 価格が安い順に並び替える
+        newList.sort(function(a,b){
+          return a.price - b.price;
+        });
+      }
+      // 絞り込み後の商品リストを返す
+      return newList;
+    }
+  }
+});
+
 // console.log('read.');
 $(function() {
 // $(".fv__nav").clone(true).addClass("fixed").appendTo(".main__fv");
@@ -18,8 +156,6 @@ if (sexStatus == "men") {
 
 //
 });
-
-let txt = 'babel test!';
 
 /*======================================================
 初期化

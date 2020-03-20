@@ -85,10 +85,10 @@ gulp.task('jsmin', function(){
 				}
 			}
 		))
-		.pipe(babel({
-      presets: ['es2015']
-    }))
-		.pipe(uglify()) //エラーが発生-あとで確認
+		// .pipe(babel({
+    //   presets: ['es2015']
+    // }))
+		/* .pipe(uglify()) //エラーが発生-あとで確認*/
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('assets/js/'));
 });
@@ -116,11 +116,13 @@ gulp.task('default', ['webserver'/*, 'watch'*/], function(){
 gulp.task('deploy', ['htmlmin', 'cssmin', 'jsmin', 'imgmin'], function(){
 });
 
-//
+// gulp
 gulp.task('babel', () => {
-    return gulp.src('_resource/js/**/*.js')
+    // return gulp.src('_resource/js/**/*.js')
+    return gulp.src('assets/js/**/*.js')
         .pipe(babel({
             presets: ['@babel/preset-env']
         }))
-        .pipe(gulp.dest('dist'));
+				.pipe(uglify())
+        .pipe(gulp.dest('assets/js/'));
 });
